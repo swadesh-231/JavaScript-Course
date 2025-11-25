@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swadesh Chatterjee | Backend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- NAVBAR -->
+    <nav
+      class="flex justify-between items-center px-8 py-4 bg-white shadow-sm fixed w-full top-0 z-50"
+    >
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl font-bold text-indigo-700">Swadesh</span>
+      </div>
+
+      <div class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-indigo-600">Home</a>
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#education" class="hover:text-indigo-600">Education</a>
+        <a href="#hackathons" class="hover:text-indigo-600">Hackathons</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section
+      id="home"
+      class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-600 to-blue-500 text-white px-6"
+    >
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Hi, I'm <span class="text-yellow-300">Swadesh Chatterjee</span>
+      </h1>
+
+      <p class="max-w-2xl mb-6 text-lg opacity-90">
+        Backend Developer specializing in Java, Spring Boot, REST APIs, and
+        scalable systems.
+      </p>
+
+      <a
+        href="#projects"
+        class="bg-white text-indigo-700 px-6 py-3 rounded-lg font-medium hover:bg-indigo-100 transition"
+        >Explore My Work</a
+      >
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-white px-6 md:px-16">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6 text-indigo-700">About Me</h2>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          I am a backend developer based in Bangalore with strong experience in
+          Java, Spring Boot, Spring Security, REST APIs, and relational
+          databases like PostgreSQL & MySQL. I enjoy building reliable, secure,
+          and scalable backend systems that solve real-world problems.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 bg-gray-50 px-6 md:px-16 text-center">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-10">
+        Technical Skills
+      </h2>
+
+      <div
+        class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto text-left text-gray-700"
+      >
+        <div class="p-6 bg-white shadow rounded-xl">
+          <h3 class="text-xl font-bold mb-2 text-indigo-700">Backend</h3>
+          <ul class="space-y-1">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Spring Security</li>
+            <li>Hibernate / JPA</li>
+            <li>REST API Design</li>
+          </ul>
+        </div>
+
+        <div class="p-6 bg-white shadow rounded-xl">
+          <h3 class="text-xl font-bold mb-2 text-indigo-700">Databases</h3>
+          <ul class="space-y-1">
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Schema Design</li>
+            <li>Query Optimization</li>
+          </ul>
+        </div>
+
+        <div class="p-6 bg-white shadow rounded-xl">
+          <h3 class="text-xl font-bold mb-2 text-indigo-700">Tools & DevOps</h3>
+          <ul class="space-y-1">
+            <li>Git & GitHub</li>
+            <li>Docker</li>
+            <li>Linux</li>
+            <li>Maven</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 bg-white px-6 md:px-16 text-center">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">Projects</h2>
+      <p class="text-gray-600 mb-10">Built with Java + Spring Boot</p>
+
+      <div
+        class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+      >
+        <!-- Project 1 -->
+        <div class="bg-white shadow rounded-xl p-6">
+          <h3 class="font-semibold text-lg mb-2">
+            E-Commerce Backend System
+          </h3>
+          <p class="text-sm text-gray-600 mb-3">
+            Spring Boot • PostgreSQL • JWT (Aug 2025)
+          </p>
+          <p class="text-gray-700 text-sm">
+            Scalable backend with product, cart, order, payment, and auth
+            modules. Implemented JWT-based role access and PostgreSQL
+            transactional workflows.
+          </p>
+          <a
+            href="https://github.com/swadesh-231/ecommerce-backend"
+            target="_blank"
+            class="text-indigo-600 font-medium underline block mt-3"
+            >GitHub Repo</a
+          >
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white shadow rounded-xl p-6">
+          <h3 class="font-semibold text-lg mb-2">
+            Library Management System
+          </h3>
+          <p class="text-sm text-gray-600 mb-3">
+            Spring Boot • MySQL • JWT (Jun 2025)
+          </p>
+          <p class="text-gray-700 text-sm">
+            RESTful backend for books, users, issue/return workflows with role
+            separation and due-date tracking.
+          </p>
+          <a
+            href="https://github.com/swadesh-231/LibraryManagementSystem"
+            target="_blank"
+            class="text-indigo-600 font-medium underline block mt-3"
+            >GitHub Repo</a
+          >
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white shadow rounded-xl p-6">
+          <h3 class="font-semibold text-lg mb-2">
+            Event Management System
+          </h3>
+          <p class="text-sm text-gray-600 mb-3">
+            Spring Boot • MySQL (Mar 2025)
+          </p>
+          <p class="text-gray-700 text-sm">
+            Ticket booking backend with admin/user roles, booking validation,
+            seat accuracy, search & pagination.
+          </p>
+          <a
+            href="https://github.com/swadesh-231/EventManagementSystem"
+            target="_blank"
+            class="text-indigo-600 font-medium underline block mt-3"
+            >GitHub Repo</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="py-20 bg-gray-50 px-6 md:px-16 text-center">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-6">Education</h2>
+      <div class="max-w-3xl mx-auto bg-white shadow rounded-xl p-8">
+        <h3 class="text-xl font-semibold">
+          Lovely Professional University (2020–2024)
+        </h3>
+        <p class="text-gray-700">B.Tech in Computer Science & Engineering</p>
+        <p class="text-gray-500 text-sm mt-2">Jalandhar, Punjab</p>
+      </div>
+    </section>
+
+    <!-- HACKATHONS -->
+    <section id="hackathons" class="py-20 bg-white px-6 md:px-16 text-center">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-6">
+        Hackathons & Competitions
+      </h2>
+
+      <div class="max-w-4xl mx-auto space-y-6">
+        <div class="bg-gray-50 border rounded-xl p-6 text-left">
+          <h3 class="text-lg font-semibold">Create & Hack Your Own Server</h3>
+          <p class="text-sm text-gray-600 mb-1">LPU — June 2023</p>
+          <p class="text-gray-700">
+            Hardened Linux server using firewall rules, SSH hardening, and
+            privilege controls.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 border rounded-xl p-6 text-left">
+          <h3 class="text-lg font-semibold">Punjab Edition Hackathon</h3>
+          <p class="text-sm text-gray-600 mb-1">LPU — Nov 2022</p>
+          <p class="text-gray-700">
+            Led a 5-member team to build a Web3 decentralized identity
+            verification system using smart contracts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section
+      id="contact"
+      class="py-20 bg-indigo-600 text-white text-center px-6 md:px-16"
+    >
+      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+      <p class="mb-6 opacity-90">
+        Feel free to reach out for opportunities or collaboration.
+      </p>
+
+      <div class="space-y-3 text-lg">
+        <p>Email:
+          <a href="mailto:swadeshchatterjee512@gmail.com" class="underline"
+            >swadeshchatterjee512@gmail.com</a
+          >
+        </p>
+        <p>Phone:
+          <a href="tel:+916296634153" class="underline">+91 62966 34153</a>
+        </p>
+        <p>
+          <a href="https://linkedin.com/in/swadeshchatterjee" target="_blank" class="underline"
+            >LinkedIn</a
+          >
+          •
+          <a href="https://github.com/swadesh-231" target="_blank" class="underline"
+            >GitHub</a
+          >
+          •
+          <a href="https://leetcode.com/u/swadesh072" target="_blank" class="underline"
+            >LeetCode</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+      © 2025 Swadesh Chatterjee. Built with ❤️ using Tailwind CSS.
+    </footer>
+  </body>
+</html>

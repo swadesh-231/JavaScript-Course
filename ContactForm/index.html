@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact From</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- CONTACT FORM SECTION -->
+<section id="contact-form" class="py-20 bg-white px-6 md:px-16">
+  <h2 class="text-3xl font-bold text-indigo-700 text-center mb-8">
+    Contact Form
+  </h2>
+
+  <div class="max-w-3xl mx-auto bg-white shadow-xl rounded-2xl p-8">
+    <form novalidate action="#" method="post" class="space-y-6">
+
+      <!-- Name -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1" for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="username"
+          minlength="5"
+          placeholder="Enter your name"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 outline-none"
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1" for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 outline-none"
+        />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1" for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 outline-none"
+        />
+      </div>
+
+      <!-- Gender -->
+      <div>
+        <span class="block text-sm font-medium text-gray-700 mb-1">Gender</span>
+        <div class="flex items-center gap-6">
+          <label class="flex items-center gap-2">
+            <input type="radio" name="gender" class="text-indigo-600" />
+            Male
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="gender" class="text-indigo-600" />
+            Female
+          </label>
+        </div>
+      </div>
+
+      <!-- DOB -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1" for="dob">Date of Birth</label>
+        <input
+          type="date"
+          id="dob"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 outline-none"
+        />
+      </div>
+
+      <!-- Hobbies -->
+      <div>
+        <span class="block text-sm font-medium text-gray-700 mb-1">Hobbies</span>
+
+        <div class="flex flex-wrap gap-6">
+          <label class="flex items-center gap-2">
+            <input type="checkbox" class="text-indigo-600" />
+            Playing Cricket
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="checkbox" class="text-indigo-600" />
+            Reading Books
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="checkbox" class="text-indigo-600" />
+            Coding
+          </label>
+        </div>
+      </div>
+
+      <!-- File Upload -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Upload File</label>
+        <input
+          type="file"
+          class="w-full text-sm text-gray-600 border border-gray-300 rounded-lg file:bg-indigo-50 file:text-indigo-700 file:px-4 file:py-2 file:rounded-lg"
+        />
+      </div>
+
+      <!-- Color Picker -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Favorite Color</label>
+        <input
+          type="color"
+          class="h-10 w-20 border border-gray-300 rounded-lg cursor-pointer"
+        />
+      </div>
+
+      <!-- Address -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Address</label>
+        <textarea
+          id="address"
+          name="address"
+          placeholder="Enter your address"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 h-24 resize-none focus:ring-2 focus:ring-indigo-500 outline-none"
+        ></textarea>
+      </div>
+
+      <!-- Select Language -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Preferred Language</label>
+        <select
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 outline-none"
+        >
+          <option disabled selected>--- Choose your language ---</option>
+          <option value="c">C</option>
+          <option value="cpp">C++</option>
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+        </select>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between pt-4">
+        <button
+          type="submit"
+          class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition"
+        >
+          Submit
+        </button>
+
+        <button
+          type="reset"
+          class="bg-gray-300 text-gray-900 px-6 py-2 rounded-lg hover:bg-gray-400 transition"
+        >
+          Reset
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
